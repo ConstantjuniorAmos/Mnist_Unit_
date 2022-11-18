@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Reconaissance</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="draw">
+            <canvas></canvas>
+            <button>Reset</button>
+        </div>
+        <div class="output">
+            <span class="label"></span>
+            <span class="confidence"></span>
+        </div>
+    </div>
+    <div class="container">
+    <h1>Handwritten Digits Detector</h1>
+            <form action="{{ url_for('upload') }}" method="post" enctype = "multipart/form-data">
+
+                <div id="importer">
+                    <input type="file" name="imageTest" id="imageFile"> 
+                    <input type="submit" value="tester">
+                </div>
+            </form>
+        <p>Importer une image ou dessiner un numéro</p>
+
+    </div>
+    
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

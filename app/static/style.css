@@ -1,0 +1,202 @@
+.main {
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.draw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.draw button{
+    padding: 10px;
+    margin-top: 15px;
+    background: none;
+    border: 2px solid black;
+}
+
+.output {
+    font-family: 'monospace';
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.output .label {
+    font-size: 200px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.output .confidence {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    font-size: 15px;
+    color: red;
+}
+
+canvas {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+body{
+    background-color: #002E41;
+}
+.principal{
+    width: 35vw;
+   
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+
+}
+.principal h1{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.principal article{
+    background: #034968a2;
+
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    min-height: 71vh;
+    max-height: auto;
+}
+
+#pad{
+    border: 1px solid white;
+    height: 45vh;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 2vh;
+    border-radius: 12px;
+}
+.principal article input[type='submit']{
+    height: 6vh;
+    font-size: 1rem;
+    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-right: auto;
+}
+.principal article input[type='button']{
+    height: 6vh;
+}
+.principal article p{
+    color: white;
+    text-align: center;
+}
+#importer{
+    
+    height:7vh ;
+    display: flex;
+}
+#imageFile{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    border: 1px solid #fff;
+    height: 3vh;
+    width: 25vw;
+}
+#importer input[type='submit']{
+    height: 4vh;
+    margin-top: 2vh;
+    margin-right: 3vw;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 70%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #canvas{
+    background-color: white;
+    border-radius: 12px;
+  }
+
+
+  .files-uploader {
+	max-width: 680px;
+	margin: auto;
+	padding: 2rem;
+}
+
+.files-uploader__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.files-uploader__file-name {
+	margin-left: 1em;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
